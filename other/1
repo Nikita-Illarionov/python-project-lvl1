@@ -1,3 +1,0 @@
-/home/nikita/.poetry/lib/poetry/_vendor/py2.7/subprocess32.py:149: RuntimeWarning: The _posixsubprocess module is not being used. Child process reliability may suffer if your program uses threads.
-  "program uses threads.", RuntimeWarning)
-Too many arguments.
