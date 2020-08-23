@@ -8,6 +8,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install dependencies
-        run: make install
+        run: |
+          pip install poetry
+          make install
       - name: Run linter
         run: make lint
