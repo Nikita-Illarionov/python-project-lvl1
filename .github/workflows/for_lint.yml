@@ -1,4 +1,4 @@
-name: File for lint-check
+name: lint-check
 
 on: push
 
