@@ -1,9 +1,9 @@
-import random
 import prompt
 
 
 def opening_speech(string):
     print('Welcome to the Brain Games!\n', string, '\n', sep='')
+
 
 def body(f):
     name = prompt.string('May I have your name? ')
