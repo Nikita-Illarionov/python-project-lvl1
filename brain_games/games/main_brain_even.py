@@ -3,7 +3,7 @@ import prompt
 
 
 def f():
-    number = random.randint(1, 1000)
+    number = random.randint(1, 100)
     if number % 2 == 0:
         right_answer = 'yes'
     else:

@@ -3,8 +3,8 @@ import random
 
 
 def f():
-    a = random.randint(1, 1000)
-    b = random.randint(1, 1000)
+    a = random.randint(1, 100)
+    b = random.randint(1, 100)
     operator = random.choice(['+', '-', '*'])
     if operator == '*':
         right_answer = a * b
