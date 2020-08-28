@@ -1,3 +1,5 @@
-/dist
-*.pyc
 .Makefile.swp
+dist
+__pycache__
+*.pyc
+nikita_illarionov_brain_games.egg-info
