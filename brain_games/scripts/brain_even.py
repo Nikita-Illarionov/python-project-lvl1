@@ -1,10 +1,8 @@
-from brain_games.games.main_brain_even import f
-from brain_games.games.main_body import opening_speech, body
+from brain_games.games.main_brain_even import play
 
 
 def main():
-    opening_speech('Answer "yes" if number even otherwise answer "no".')
-    body(f)
+    play()
 
 
 if __name__ == '__main__':

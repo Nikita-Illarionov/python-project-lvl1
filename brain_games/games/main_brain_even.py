@@ -1,13 +1,17 @@
 import random
-import prompt
+from brain_games.games.main_body import welcome_user, run_the_slider
 
 
-def f():
+def play():
+    welcome_user('Answer "yes" if number even otherwise answer "no".')
+    run_the_slider(generate_the_data)
+
+
+def generate_the_data():
     number = random.randint(1, 100)
     if number % 2 == 0:
         right_answer = 'yes'
     else:
         right_answer = 'no'
-    print('Question: {}'.format(number))
-    answer = prompt.string('Your answer: ')
-    return answer, right_answer
+    question = str(number)
+    return question, right_answer
