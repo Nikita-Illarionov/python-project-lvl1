@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "Nikita-Illarionov_brain_games"
-version = "1.2.0"
+version = "1.4.0"
 description = ""
 authors = ["Nikita <Nikita.Clark@yandex.ru>"]
 packages = [

@@ -2,4 +2,4 @@
 dist
 __pycache__
 *.pyc
-nikita_illarionov_brain_games.egg-info
+*.egg-info

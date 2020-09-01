@@ -1,16 +1,13 @@
 import prompt
 
 
-def welcome_user(string):
-    print('Welcome to the Brain Games!\n', string, '\n', sep='')
-
-
-def run_the_slider(generate_the_data):
+def run_slider(rule, generate_data):
+    print('Welcome to the Brain Games!\n', rule, '\n', sep='')
     name = prompt.string('May I have your name? ')
     print('Hello, {}!\n'.format(name))
     n = 0
     while n < 3:
-        question, right_answer = generate_the_data()
+        question, right_answer = generate_data()
         print('Question: ' + question)
         user_answer = prompt.string('Your answer: ')
         if user_answer == right_answer:

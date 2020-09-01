@@ -1,10 +1,10 @@
 import random
-from brain_games.games.main_body import welcome_user, run_the_slider
+from brain_games.main_body import run_slider
 
 
 def play():
-    welcome_user('Find the greatest common divisor of given numbers.')
-    run_the_slider(generate_the_data)
+    rule = 'Find the greatest common divisor of given numbers.'
+    run_slider(rule, generate_data)
 
 
 def find_gcd(a, b):
@@ -16,7 +16,7 @@ def find_gcd(a, b):
     return a + b
 
 
-def generate_the_data():
+def generate_data():
     a = random.randint(1, 100)
     b = random.randint(1, 100)
     question = str(a) + ' ' + str(b)
