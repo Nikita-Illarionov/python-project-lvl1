@@ -5,6 +5,16 @@
 - Определение наибольшего общего делителя.
 - Определение простого числа.
 
+Инструкция по установке и запуску игры (видеоинструкцию можно посмотреть ниже):
+- создать виртуальное окружение:
+'python -m venv test_env'
+- обновить pip (рекомендуется):
+'test_env/bin/pip install --upgrade pip
+- скачать игру:
+'test_env/bin/pip install -i https://...'
+- запустить игру (команды: brain-even, brain-calc, brain-gcd, brain-prime, brain-progression):
+'test_env/bin/brain-even
+
 
 <a href="https://codeclimate.com/github/Nikita-Illarionov/python-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
 
