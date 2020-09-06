@@ -19,5 +19,5 @@ def generate_data():
             question += '.. '
         else:
             question += str(first_number + step * k) + ' '
-    question = question[:-1] # deleting the excess space
+    question = question[:-1]  # deleting the excess space
     return question, str(right_answer)
