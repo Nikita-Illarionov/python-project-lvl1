@@ -9,18 +9,22 @@ def play():
     run_slider(rule, generate_data)
 
 
-def isPrime(number):
-    result = True
+def is_prime(number):
+    if number < 2:
+        return False
     i = 2
     limit = int(math.sqrt(number))
-    while result and i <= limit:
-        result = number % i != 0
+    remainder = True
+    while i <= limit:
+        remainder = number % i != 0
+        if not remainder:
+            return False
         i += 1
-    return 'yes' if result else 'no'
+    return True
 
 
 def generate_data():
     number = random.randint(2, 100)
     question = str(number)
-    right_answer = isPrime(number)
+    right_answer = 'yes' if is_prime(number) else 'no'
     return question, right_answer

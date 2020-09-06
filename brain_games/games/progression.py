@@ -8,17 +8,16 @@ def play():
 
 
 def generate_data():
+    progression_length = 10
     step = random.randint(1, 10)
     first_number = random.randint(1, 100)
-    k = random.randint(1, 10)  # number of the hidden element
-    n = 11  # quality of numbers + 1
-    right_answer = first_number + step * (k-1)
+    hidden_element_index = random.randint(0, progression_length - 1)
+    right_answer = first_number + step * hidden_element_index
     question = ''
-    tmp = first_number
-    for i in range(1, n):
-        if i == k:
+    for k in range(progression_length):
+        if k == hidden_element_index:
             question += '.. '
         else:
-            question += str(tmp) + ' '
-        tmp += step
+            question += str(first_number + step * k) + ' '
+    question = question[:-1] # deleting the excess space
     return question, str(right_answer)
