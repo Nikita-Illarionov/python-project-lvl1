@@ -18,5 +18,4 @@ def run_slider(rule, generate_data):
 Let\'s try again, {}!'.format(user_answer, right_answer, name))
             return
         n += 1
-    if n == number_of_rounds:
-        print('Congratulations, {}!'.format(name))
+    print('Congratulations, {}!'.format(name))
