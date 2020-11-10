@@ -1,5 +1,5 @@
 import random
-from brain_games.main_body import run_slider
+from brain_games.engine import run_slider
 
 
 def play():
